@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="techcare.exe" size="449536">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="techcare.exe" size="460288">
       <assemblyIdentity name="techcare" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5QaX9cUP4htOwH7Whhrx54+5oZ08/QMnDspB5Qv1Wfk=</dsig:DigestValue>
+        <dsig:DigestValue>AUhazKs8Shp9q4MxCAFFxuZ7mwy0HKY9BPgl4b/6AuU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -81,7 +81,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>710ij7hRdlTbr3/AJOKTPj+i+WDxm2i2/yXb/rCUKJU=</dsig:DigestValue>
+      <dsig:DigestValue>8K/jrq/sNQEcLUCcwdR4/7eeHWtYTQWeIz/IAy+/z68=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

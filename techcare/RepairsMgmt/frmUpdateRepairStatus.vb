@@ -4,15 +4,15 @@ Public Class frmUpdateRepairStatus
 
     Private Sub btnConfirmChanges_Click(sender As Object, e As EventArgs) Handles btnConfirmChanges.Click
         If rbBookedIn.Checked = True Then
-            updateRepairStatus("Booked In")
+            updateRepairStatus("Registrado")
         ElseIf rbServiceInProgress.Checked = True Then
-            updateRepairStatus("Service in Progress")
+            updateRepairStatus("Servicio en progreso")
         ElseIf rbTransferred.Checked = True Then
-            updateRepairStatus("Transferred to External Body")
+            updateRepairStatus("Transferido a un tercero")
         ElseIf rbServiceCompleted.Checked = True Then
-            updateRepairStatus("Service Completed")
+            updateRepairStatus("Servivio completado")
         ElseIf rbAssetRemoved.Checked = True Then
-            updateRepairStatus("Asset Removed")
+            updateRepairStatus("Descartado")
         Else
             MsgBox("Elija una opción para actualizar el estado de reparación actual.", MsgBoxStyle.Exclamation, "techcare")
         End If
@@ -40,7 +40,7 @@ Public Class frmUpdateRepairStatus
             dbConnection.Dispose()
             dbCommand.Dispose()
 
-            If status = "Asset Removed" Then
+            If status = "Descartado" Then
                 frmRepairMgmt.btnAddRepairRemark.Enabled = False
                 frmRepairMgmt.btnCustomerCollection.Enabled = False
                 frmRepairMgmt.btnUpdateRepairQuote.Enabled = False

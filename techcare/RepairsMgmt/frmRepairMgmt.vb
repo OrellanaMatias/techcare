@@ -253,16 +253,16 @@ Public Class frmRepairMgmt
     Private Sub btnCustomerCollection_Click(sender As Object, e As EventArgs) Handles btnCustomerCollection.Click
 
         Dim confirmCollection As DialogResult
-        confirmCollection = MessageBox.Show("Entrega al Cliente:" & vbNewLine & vbNewLine & "¿Ha/está el cliente:" & vbNewLine & "1) Pagado por alguna(s) pieza(s) o mano de obra?" &
-                                          vbNewLine & "2) Recibido su producto y está satisfecho con la condición?" & vbNewLine & "3) Satisfecho de que la reparación está completa?" &
-                                          vbNewLine & vbNewLine & "Haga clic en SÍ para confirmar la entrega, o haga clic en NO para detener el proceso.",
+        confirmCollection = MessageBox.Show("Entrega al Cliente:" & vbNewLine & vbNewLine & "El cliente:" & vbNewLine & "Retira el equio" &
+                                          vbNewLine & "2) Recibido su producto y está satisfecho con la condición?" & vbNewLine & "" &
+                                          vbNewLine & vbNewLine & "",
                                           "techcare", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
 
         If confirmCollection = DialogResult.Yes Then
             Try
                 Dim dbConnection As MySqlConnection = New MySqlConnection("Server=localhost;Database=techcare;Uid=techcare;Pwd=techcare;")
-                Dim dbCommand As MySqlCommand = New MySqlCommand("UPDATE Repairs SET currentRepairStatus='Collected' WHERE repairReference=@repairRef;", dbConnection)
+                Dim dbCommand As MySqlCommand = New MySqlCommand("UPDATE Repairs SET currentRepairStatus='Retirado' WHERE repairReference=@repairRef;", dbConnection)
 
                 dbCommand.Parameters.AddWithValue("@repairRef", lblRepairRef.Text)
 

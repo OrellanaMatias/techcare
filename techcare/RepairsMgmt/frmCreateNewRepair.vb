@@ -73,7 +73,7 @@ Public Class frmCreateNewRepair
                 dbCommand.Parameters.AddWithValue("@assetMake", tbAssetMake.Text)
                 dbCommand.Parameters.AddWithValue("@assetModel", tbAssetModel.Text)
                 dbCommand.Parameters.AddWithValue("@assetSerialNumber", tbAssetSerialNumber.Text)
-                dbCommand.Parameters.AddWithValue("@currentRepairStatus", "Booked In")
+                dbCommand.Parameters.AddWithValue("@currentRepairStatus", "Registrado")
                 dbCommand.Parameters.AddWithValue("@intakeDate", System.DateTime.Now.ToShortDateString)
                 dbCommand.Parameters.AddWithValue("@faultDescription", tbFaultType.Text & ": " & tbFaultDescription.Text)
                 dbCommand.Parameters.AddWithValue("@estimateQuote", tbEstimateCost.Text)

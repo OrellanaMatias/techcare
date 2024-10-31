@@ -55,11 +55,11 @@ Partial Class frmRepairMgmt
         Me.lblQuote = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.dgvRepairRemarks = New System.Windows.Forms.DataGridView()
+        Me.btnCustomerCollection = New System.Windows.Forms.Button()
+        Me.btnAddRepairRemark = New System.Windows.Forms.Button()
         Me.colEmployee = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colTimestamp = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colRemark = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.btnCustomerCollection = New System.Windows.Forms.Button()
-        Me.btnAddRepairRemark = New System.Windows.Forms.Button()
         Me.sidePanel.SuspendLayout()
         CType(Me.dgvRepairSearchResults, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvRepairRemarks, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -390,7 +390,7 @@ Partial Class frmRepairMgmt
         Me.lblQuote.Name = "lblQuote"
         Me.lblQuote.Size = New System.Drawing.Size(349, 18)
         Me.lblQuote.TabIndex = 22
-        Me.lblQuote.Text = "<£quote>"
+        Me.lblQuote.Text = "<$quote>"
         Me.lblQuote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label19
@@ -430,34 +430,13 @@ Partial Class frmRepairMgmt
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvRepairRemarks.DefaultCellStyle = DataGridViewCellStyle4
         Me.dgvRepairRemarks.GridColor = System.Drawing.Color.White
-        Me.dgvRepairRemarks.Location = New System.Drawing.Point(360, 369)
+        Me.dgvRepairRemarks.Location = New System.Drawing.Point(356, 369)
         Me.dgvRepairRemarks.Name = "dgvRepairRemarks"
         Me.dgvRepairRemarks.ReadOnly = True
         Me.dgvRepairRemarks.RowHeadersVisible = False
         Me.dgvRepairRemarks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvRepairRemarks.Size = New System.Drawing.Size(636, 168)
+        Me.dgvRepairRemarks.Size = New System.Drawing.Size(651, 168)
         Me.dgvRepairRemarks.TabIndex = 23
-        '
-        'colEmployee
-        '
-        Me.colEmployee.HeaderText = "Empleado"
-        Me.colEmployee.Name = "colEmployee"
-        Me.colEmployee.ReadOnly = True
-        Me.colEmployee.Width = 150
-        '
-        'colTimestamp
-        '
-        Me.colTimestamp.HeaderText = "Fecha / hora"
-        Me.colTimestamp.Name = "colTimestamp"
-        Me.colTimestamp.ReadOnly = True
-        Me.colTimestamp.Width = 125
-        '
-        'colRemark
-        '
-        Me.colRemark.HeaderText = "Comentario"
-        Me.colRemark.Name = "colRemark"
-        Me.colRemark.ReadOnly = True
-        Me.colRemark.Width = 355
         '
         'btnCustomerCollection
         '
@@ -480,6 +459,27 @@ Partial Class frmRepairMgmt
         Me.btnAddRepairRemark.TabIndex = 24
         Me.btnAddRepairRemark.Text = "Añadir comentario"
         Me.btnAddRepairRemark.UseVisualStyleBackColor = False
+        '
+        'colEmployee
+        '
+        Me.colEmployee.HeaderText = "Empleado"
+        Me.colEmployee.Name = "colEmployee"
+        Me.colEmployee.ReadOnly = True
+        Me.colEmployee.Width = 180
+        '
+        'colTimestamp
+        '
+        Me.colTimestamp.HeaderText = "Fecha / hora"
+        Me.colTimestamp.Name = "colTimestamp"
+        Me.colTimestamp.ReadOnly = True
+        Me.colTimestamp.Width = 160
+        '
+        'colRemark
+        '
+        Me.colRemark.HeaderText = "Comentario"
+        Me.colRemark.Name = "colRemark"
+        Me.colRemark.ReadOnly = True
+        Me.colRemark.Width = 300
         '
         'frmRepairMgmt
         '
